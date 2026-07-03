@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #F8F8F8; color: #111827; font-family: Manrope, sans-serif; }
+main section[id] { scroll-margin-top: 6rem; }
+::selection { background: #0F172A; color: white; }
+:where(a, button):focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; box-shadow: 0 0 0 4px #0F172A; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
+@media (max-width: 639px) {
+  html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+  #sobre { padding-bottom: 4rem; }
+  #atuacao, #depoimentos, #localizacao, #contato { padding-top: 4rem; padding-bottom: 4rem; }
+  footer { padding-top: 3rem; padding-bottom: 3rem; }
+}
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8 lg:px-10; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.2em] text-ink; }
+  .section-title { @apply font-display text-4xl font-semibold leading-[1.02] tracking-[-0.02em] text-ink sm:text-5xl lg:text-[3.5rem]; }
+  .button-shape { @apply rounded-lg; }
+}

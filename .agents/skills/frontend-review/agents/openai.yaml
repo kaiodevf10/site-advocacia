@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Review"
+  short_description: "Audit React frontends before production"
+  default_prompt: "Use $frontend-review to audit this React, TypeScript, and Tailwind project before production."
