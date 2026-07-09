@@ -3,6 +3,7 @@ node_modules/
 
 # Production build
 dist/
+.vercel/
 
 # TypeScript incremental build information
 *.tsbuildinfo
@@ -18,6 +19,7 @@ dist/
 .npm-cache/
 
 # Package manager logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
